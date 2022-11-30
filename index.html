@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculator.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <!-- Calculator Body -->
+<div class="calc-body">
+
+  <!-- Calculator Display Screen -->
+<div class="calc-screen">
+  <div id="calc-operation"> </div>
+  <div id="calc-typed"> <input id="result" type="text" class="form-control" ></div>
+</div>
+
+
+  <!-- Calculator Buttons -->
+  <div class="calc-button-row">
+      <button class="ac" onclick="allClear()">AC</button>
+      <button class="opt">&#43;&#47;&#8722;</button>
+      <button class="opt" onclick="displayvalue('%')">&#37;</button>
+      <button class="opt" onclick="displayvalue('/')">&#247;</button>
+      <button id="seven" onclick="displayvalue('7')" >7 </button>
+      <button id="eight" onclick="displayvalue('8')">8</button>
+      <button id="nine" onclick="displayvalue('9')">9</button>
+      <button class="opt" onclick="displayvalue('*')">&#215;</button>
+      <button id="four" onclick="displayvalue('4')">4</button>
+      <button id="five" onclick="displayvalue('5')">5</button>
+      <button id="six" onclick="displayvalue('6')">6</button>
+      <button class="opt" onclick="displayvalue('-')">&#8722;</button>
+      <button id="one" onclick="displayvalue('1')">1</button>
+      <button id="two" onclick="displayvalue('2')" >2</button>
+      <button id="three" onclick="displayvalue('3')">3</button>
+      <button class="opt" onclick="displayvalue('+')">&#43;</button>
+      <button id="zero" onclick="displayvalue('0')">0</button>
+      <button id="decimal" onclick="displayvalue('.')">.</button>
+      <button id="del" onclick="back()">&#9003;</button>
+      <button class="opt" onclick="evaluateOut()">&#61;</button>
+  </div>
+  </div>
+</body>
+<script src="calculator.js"></script>
+</html>
